@@ -15,6 +15,8 @@ html {
 }
 .container {
 	max-width: 1350px;
+	padding: 0 20px;
+	box-sizing: border-box;
 	height: 100%;
 	margin: auto;
 	display: flex;
@@ -30,11 +32,10 @@ html {
 }
 .header__navigation {
 	display: flex;
-	width: 45%;
-	justify-content: space-between;
 }
 .header__list {
 	list-style: none;
+	margin-right: 30px;
 }
 .header__link {
 	text-decoration: none;
@@ -42,7 +43,8 @@ html {
 	font-weight: 400;
 	color: #fff;
 }
- .header__link_active {
+
+.header__link_active {
  	color: #059097;
  }
 .header__link_theme_black {
@@ -64,6 +66,7 @@ html {
 	left: 50%;
 	margin-left: -12px;
 }
+
 .Hamburger__line_theme_black {
 	background: #000;
 }
