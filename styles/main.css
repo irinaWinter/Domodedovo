@@ -2,7 +2,19 @@ html {
 	height: 100%;
 
 }
+.index {
+	height: 100%;
+	margin: 0;
+}
+.dropDownMenu {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position: relative;
+	z-index: 2;
+}
 .indexPage {
+	position: relative;
 	margin: 0;
 	padding: 40px 0 20px 0;
 	box-sizing: border-box;
@@ -42,7 +54,7 @@ html {
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	color: red;
+	color: #fff;
 }
 
 .header__link_active {
