@@ -1,19 +1,32 @@
 html {
 	height: 100%;
+
 }
-.project {
-	background: linear-gradient(0deg, rgba(0, 0, 8, .8),
-									   rgba(0, 0, 0, .0)),
-									   url('img/back/bg_index.jpg');
+.indexPage {
+	margin: 0;
+	padding: 40px 0 20px 0;
+	box-sizing: border-box;
+	height: 100%;
+	background: url('cat.jpg');
+	/*background: linear-gradient(0deg, rgba(0, 0, 8, .8),
+									   rgba(0, 0, 0, .0));*/
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.container {
+	max-width: 1350px;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
 .header {
-	background: url('img/background/bg_index.jpg');
+
+	width: 100%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	padding: 20px;
 }
 .header__navigation {
 	display: flex;
@@ -64,21 +77,23 @@ html {
 .Hamburger__line:last-child {
     bottom: 0;
 }
-.container {
-	padding: 20px;
-	display: flex;
-	align-items: center;
+
+
+/* Main (start) */
+.content {
+	width: 100%;
 }
-.container__headline {
-	margin-top: 13%;
-	margin-left: 100px;
+.content__headline {
+	margin: 0;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 130px;
 	color: #fff;	
 }
+/* Main (end) */
+
 .footer {
-	padding: 20px;
+	width: 100%;
 }
 .footer__phoneNumber {
 	font-family: 'Roboto', sans-serif;
