@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 	<link rel="shortcut icon" href="img/logo/logo-title.png" type="image/x-icon"> 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/flight_display.css">
 	<script src="script/jquery-3.3.1.min.js"></script>
 	<script src="script/script.js"></script>
 </head>
@@ -19,7 +20,7 @@
 			</div>
 			<nav class="menu">
 				<ul class="menu__item">
-					<li class="menu__listItem"><a class="menu__link menu__link_headline" href="">Главная</a></li>
+					<li class="menu__listItem"><a class="menu__link menu__link_headline" href="index.html">Главная</a></li>
 					<li class="menu__listItem"><a class="menu__link" href="flight_display.html">Табло рейсов</a></li>
 					<li class="menu__listItem"><a class="menu__link" href="">Услуги</a></li>
 					<li class="menu__listItem"><a class="menu__link" href="">Гид по аэропорту</a></li>
@@ -80,8 +81,25 @@
 					</div>
 				</nav>
 			</header>
-			<main class="container">
-				<h1 class="container__headline"></h1>
+			<main>
+				<div class="search">
+					<input class="search__input" type="search" name="search">
+					<button class="search__button"></button>
+				</div>
+				<div class="scheduleHeadline">
+					<h2 class="scheduleHeadline__item">Вылет</h2>
+					<h2 class="scheduleHeadline__item">Прилет</h2>
+				</div>
+				<div class="schedule">
+					<div class="scheduleExplanation">
+						<p class="scheduleExplanation__item">Время</p>
+						<p class="scheduleExplanation__item">Город назначения</p>
+						<p class="scheduleExplanation__item">Авиакомпания</p>
+						<p class="scheduleExplanation__item">Рейс</p>
+						<p class="scheduleExplanation__item">Терминал</p>
+						<p class="scheduleExplanation__item">Статус рейса</p>
+					</div>
+				</div>
 			</main>
 			<footer class="footer">
 				<div class="footer__contacts">

@@ -58,6 +58,10 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.flightDisplay {
+	height: 100%;
+	margin: 0;
+}
 .container {
 	max-width: 1350px;
 	padding: 0 20px;
