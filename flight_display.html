@@ -3,33 +3,91 @@
 <head>
 	<title>Табло рейсов / Московский аэропорт Домодедово</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="shortcut icon" href="logo-title.png" type="image/x-icon"> 
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="shortcut icon" href="img/logo/logo-title.png" type="image/x-icon"> 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<script src="script/jquery-3.3.1.min.js"></script>
+	<script src="script/script.js"></script>
 </head>
 <body class="flightDisplay">
-	<header class="header">
-		<img src="color-logo.png">
-		<nav class="header__navigation">
-			<li class="header__list"><a class="header__link header__link_theme_black" href="index.html">Главная</a></li>
-			<li class="header__list"><a class="header__link header__link_active" href="flight_display.html">Табло рейсов</a></li>
-			<li class="header__list"><a class="header__link header__link_theme_black" href="#">Услуги</a></li>
-			<li class="header__list"><a class="header__link header__link_theme_black" href="#">Гид по аэропорту</a></li>
-			<li class="header__list"><a class="header__link header__link_theme_black" href="#">Парковка</a></li>
-			<li class="header__list"><a class="header__link header__link_theme_black" href="#">Как добраться</a></li>
-			<div class="Hamburger">
-				<span class="Hamburger__line Hamburger__line_theme_black"></span>
-				<span class="Hamburger__line Hamburger__line_theme_black"></span>
-				<span class="Hamburger__line Hamburger__line_theme_black"></span>
+	<!-- Раскрывающееся меню (start) -->
+
+	<div class="dropDownMenu">
+		<div class="container">
+			<div class="header">
+				<a href="index.html"><img src="img/logo/color-logo.png"></a>
 			</div>
-		</nav>
-	</header>
-	<main class="container">
-		<h1 class="container__headline"></h1>
-	</main>
-	<footer class="footer">
-		<div class="footer__contacts">
-			<span class="footer__phoneNumber">+7 495 933-66-66</span>
+			<nav class="menu">
+				<ul class="menu__item">
+					<li class="menu__listItem"><a class="menu__link menu__link_headline" href="">Главная</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="flight_display.html">Табло рейсов</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Услуги</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Гид по аэропорту</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Парковка</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Как добраться</a></li>
+				</ul>
+				<ul class="menu__item">
+					<li class="menu__listItem"><a class="menu__link menu__link_headline" href="">Сервисы</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Авиабилеты</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Регистрация</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Схема аэропорта</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Транспорт</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Магазины и кафе</a></li>
+					<li class="menu__listItem" class="menu__listItem"><a class="menu__link" href="">Отели</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Специальные сервисы</a></li>
+				</ul>
+				</ul>
+				<ul class="menu__item">
+					<li class="menu__listItem"><a class="menu__link menu__link_headline" href="">Контакты</a></li>
+					<li  class="menu__listItem"><a class="menu__link" href="">О компании</a></li>
+					<li  class="menu__listItem"><span class="footer__phoneNumber">+7 495 933-66-66</span></li>
+					<li class="menu__listItem">
+							<a class="menu__link" href="https://www.facebook.com/dme.aero" target="_blank"><img class="menu__socialNetwork" src="img/social-networks/fb.png"></a>
+							<a class="menu__link" href="https://vk.com/dme.aero" target="_blank"><img class="menu__socialNetwork" src="img/social-networks/vk.png"></a>
+							<a class="menu__link" href="https://www.instagram.com/dme.aero/" target="_blank"><img class="menu__socialNetwork" src="img/social-networks/inst.png"></a>
+							<a class="menu__link" href="https://www.youtube.com/channel/UCbXBdxjnrfbCAmIC_7Icdog" target="_blank"><img class="menu__socialNetwork" src="img/social-networks/youTube.png"></a>
+					</li>	
+				</ul>
+				<ul class="menu__item">
+					<li class="menu__listItem"><a class="menu__link menu__link_headline" href="">Для бизнеса</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Грузовым клиентам</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Партнерам</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Пользователям инфраструктуры</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Соискателям</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Карьера</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Инвесторам</a></li>
+					<li class="menu__listItem"><a class="menu__link" href="">Предприятия аэропорта</a></li>
+				</ul>				
+			</nav>	
+		</div>	
+	</div>
+	<!-- Раскрывающееся меню (end) -->
+	<div class="page">
+		<div class="container">
+			<header class="header">
+				<img src="img/logo/color-logo.png">
+				<nav class="header__navigation">
+					<li class="header__list"><a class="header__link header__link_theme_black" href="index.html">Главная</a></li>
+					<li class="header__list"><a class="header__link header__link_active" href="flight_display.html">Табло рейсов</a></li>
+					<li class="header__list"><a class="header__link header__link_theme_black" href="#">Услуги</a></li>
+					<li class="header__list"><a class="header__link header__link_theme_black" href="#">Гид по аэропорту</a></li>
+					<li class="header__list"><a class="header__link header__link_theme_black" href="#">Парковка</a></li>
+					<li class="header__list"><a class="header__link header__link_theme_black" href="#">Как добраться</a></li>
+					<div class="Hamburger">
+						<span class="Hamburger__line Hamburger__line_theme_black"></span>
+						<span class="Hamburger__line Hamburger__line_theme_black"></span>
+						<span class="Hamburger__line Hamburger__line_theme_black"></span>
+					</div>
+				</nav>
+			</header>
+			<main class="container">
+				<h1 class="container__headline"></h1>
+			</main>
+			<footer class="footer">
+				<div class="footer__contacts">
+					<span class="footer__phoneNumber">+7 495 933-66-66</span>
+				</div>
+			</footer>
 		</div>
-	</footer>
+	</div>		
 </html>
