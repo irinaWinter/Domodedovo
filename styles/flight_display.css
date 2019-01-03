@@ -1,5 +1,7 @@
+
 .flightDisplayContent {
 	width: 100%;
+	margin-bottom: 50px;
 }
 .search {
 	margin-top: 130px;
@@ -53,8 +55,24 @@
 	padding: 0 10px;
 	border-bottom: 1px solid #747474;
 }
-.scheduleExplanation__item:first-child {
+.scheduleExplanation__tablecell_time {
 	width: 10%;
+}
+.scheduleExplanation__tablecell_city {
+	width: 30%;
+}
+.scheduleExplanation__tablecell_aviacompany {
+	width: 25%;
+}
+.scheduleExplanation__tablecell_flight {
+	width: 10%;
+}
+.scheduleExplanation__tablecell_terminal {
+	width: 10%;
+}
+.scheduleExplanation__tablecell_flightStatus {
+	width: 15%;
+	text-align: right;
 }
 .scheduleExplanation__item {
 	font-family: 'Roboto', sans-serif;
@@ -86,6 +104,9 @@
 	font-size: 20px;
 	color: #000;
 }
+ .scheduleItem__img {
+ 	margin-left: 20px;
+ }
 .scheduleItem__flight {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
@@ -103,5 +124,6 @@
 	font-weight: 400;
 	font-size: 15px;
 	color: #000;
+	text-align: right;
 }
 
