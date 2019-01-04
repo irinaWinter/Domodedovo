@@ -99,6 +99,9 @@ html {
 .header__link_theme_black {
 	color: #000;
 }
+.header__link_theme_grey {
+	color: #bababb;;
+}
 .Hamburger {
 	position: relative;
 	display: inline-block;

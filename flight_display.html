@@ -10,6 +10,7 @@
 	<script src="script/jquery-3.3.1.min.js"></script>
 	<script src="script/script.js"></script>
 	<script src="script/search.js"></script>
+	<script src="script/data.js" defer></script>
 </head>
 <body class="flightDisplay">
 	<!-- Раскрывающееся меню (start) -->
@@ -84,14 +85,19 @@
 				</nav>
 			</header>
 			<main class="flightDisplayContent">
-				<div class="scheduleHeadline">
-					<h2 class="scheduleHeadline__item scheduleHeadline__item_active">Вылет</h2>
-					<h2 class="scheduleHeadline__item">Прилет</h2>
-				</div>
-				<div class="search">
-					<input class="search__input" type="search" name="search" placeholder="Поиск по номеру рейса">
-					<button class="search__button"></button>
-				</div>
+				<div class="flightFilter">
+					<div class="flightFilter__select_theme_greyArrow">
+						<select class="flightFilter__select">
+							<option class="flightFilter__option">Вылет</option>
+							<option class="flightFilter__option">Прилет</option>
+							<option class="flightFilter__option">Задержан</option>
+						</select>
+					</div>	
+					<div class="search">
+						<input class="search__input" type="search" name="search" placeholder="Поиск по номеру рейса">
+						<button class="search__button"></button>
+					</div>
+				</div>	
 				<div class="schedule">
 					<div class="scheduleExplanation">
 						<p class="scheduleExplanation__item scheduleExplanation__tablecell_time">Время</p>
@@ -101,71 +107,14 @@
 						<p class="scheduleExplanation__item scheduleExplanation__tablecell_terminal">Терминал</p>
 						<p class="scheduleExplanation__item scheduleExplanation__tablecell_flightStatus">Статус рейса</p>
 					</div>
-					<div class="scheduleItem">
-						<div class="scheduleItem__time scheduleExplanation__tablecell_time">20:00</div>
-						<div class="scheduleItem__city scheduleExplanation__tablecell_city">Саратов</div>
-						<div class="scheduleItem__aviacompany scheduleExplanation__tablecell_aviacompany">
-							Ютэйр
-							<img class="scheduleItem__img" src="img/logo/utair.png" alt="Логотип Ютейр">
-						</div>
-						<div class="scheduleItem__flight scheduleExplanation__tablecell_flight">TK 9004</div>
-						<div class="scheduleItem__terminal scheduleExplanation__tablecell_terminal">A</div>
-						<div class="scheduleItem__flightStatus scheduleExplanation__tablecell_flightStatus">Посадка окончена</div>
-					</div>
-					<div class="scheduleItem">
-						<div class="scheduleItem__time scheduleExplanation__tablecell_time">20:00</div>
-						<div class="scheduleItem__city scheduleExplanation__tablecell_city">Саратов</div>
-						<div class="scheduleItem__aviacompany scheduleExplanation__tablecell_aviacompany">
-							Ютэйр
-							<img class="scheduleItem__img" src="img/logo/utair.png" alt="Логотип Ютейр">
-						</div>
-						<div class="scheduleItem__flight scheduleExplanation__tablecell_flight">RT 4354</div>
-						<div class="scheduleItem__terminal scheduleExplanation__tablecell_terminal">A</div>
-						<div class="scheduleItem__flightStatus scheduleExplanation__tablecell_flightStatus">Посадка окончена</div>
-					</div>
-					<div class="scheduleItem">
-						<div class="scheduleItem__time scheduleExplanation__tablecell_time">20:00</div>
-						<div class="scheduleItem__city scheduleExplanation__tablecell_city">Саратов</div>
-						<div class="scheduleItem__aviacompany scheduleExplanation__tablecell_aviacompany">
-							Ютэйр
-							<img class="scheduleItem__img" src="img/logo/utair.png" alt="Логотип Ютейр">
-						</div>
-						<div class="scheduleItem__flight scheduleExplanation__tablecell_flight">ER 2340</div>
-						<div class="scheduleItem__terminal scheduleExplanation__tablecell_terminal">A</div>
-						<div class="scheduleItem__flightStatus scheduleExplanation__tablecell_flightStatus">Посадка окончена</div>
-					</div>
-					<div class="scheduleItem">
-						<div class="scheduleItem__time scheduleExplanation__tablecell_time">20:00</div>
-						<div class="scheduleItem__city scheduleExplanation__tablecell_city">Саратов</div>
-						<div class="scheduleItem__aviacompany scheduleExplanation__tablecell_aviacompany">
-							Ютэйр
-							<img class="scheduleItem__img" src="img/logo/utair.png" alt="Логотип Ютейр">
-						</div>
-						<div class="scheduleItem__flight scheduleExplanation__tablecell_flight">KJ 8973</div>
-						<div class="scheduleItem__terminal scheduleExplanation__tablecell_terminal">A</div>
-						<div class="scheduleItem__flightStatus scheduleExplanation__tablecell_flightStatus">Посадка окончена</div>
-					</div>
-					<div class="scheduleItem">
-						<div class="scheduleItem__time scheduleExplanation__tablecell_time">20:00</div>
-						<div class="scheduleItem__city scheduleExplanation__tablecell_city">Саратов</div>
-						<div class="scheduleItem__aviacompany scheduleExplanation__tablecell_aviacompany">
-							Ютэйр
-							<img class="scheduleItem__img" src="img/logo/utair.png" alt="Логотип Ютейр">
-						</div>
-						<div class="scheduleItem__flight scheduleExplanation__tablecell_flight">KL 4677</div>
-						<div class="scheduleItem__terminal scheduleExplanation__tablecell_terminal">A</div>
-						<div class="scheduleItem__flightStatus scheduleExplanation__tablecell_flightStatus">Посадка окончена</div>
-					</div>
-					
-					
 				</div>
 			</main>
 			<footer class="footer">
-					<span class="footer__phoneNumber footer__phoneNumbe_theme_black footer__contactsItem">+7 495 933-66-66</span>
-					<a class="footer__contactsItem" href="https://www.facebook.com/dme.aero" target="_blank"><img src="img/social-networks/fb_black.png" alt="Логотип Facebook"></a>
-					<a class="footer__contactsItem" href="https://vk.com/dme.aero" target="_blank"><img src="img/social-networks/vk_black.png" alt="Логотип VK"></a>
-					<a class="footer__contactsItem" href="https://www.instagram.com/dme.aero/" target="_blank"><img src="img/social-networks/inst_black.png" alt="Логотип Instagram"></a>
-					<a class="footer__contactsItem" href="https://www.youtube.com/channel/UCbXBdxjnrfbCAmIC_7Icdog" target="_blank"><img src="img/social-networks/youTube_black.png" alt="Логотип YouTube"></a>	
+					<span class="footer__phoneNumber footer__contactsItem">+7 495 933-66-66</span>
+					<a class="footer__contactsItem" href="https://www.facebook.com/dme.aero" target="_blank"><img src="img/social-networks/fb.png" alt="Логотип Facebook"></a>
+					<a class="footer__contactsItem" href="https://vk.com/dme.aero" target="_blank"><img src="img/social-networks/vk.png" alt="Логотип VK"></a>
+					<a class="footer__contactsItem" href="https://www.instagram.com/dme.aero/" target="_blank"><img src="img/social-networks/inst.png" alt="Логотип Instagram"></a>
+					<a class="footer__contactsItem" href="https://www.youtube.com/channel/UCbXBdxjnrfbCAmIC_7Icdog" target="_blank"><img src="img/social-networks/youTube.png" alt="Логотип YouTube"></a>	
 			</footer>
 		</div>
 	</div>
