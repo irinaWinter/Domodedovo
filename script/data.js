@@ -10,7 +10,7 @@ var flights = [
 	},
 	{
 		flight: "ДР 263",
-		status: "Идет регистрация",
+		status: "Регистрация заканчивается",
 		city: "Калининград (Храброво)",
 		time: "14:55",
 		aviacompany: "Победа",
@@ -26,7 +26,7 @@ var flights = [
 	},
 	{
 		flight: "ZF 7743",
-		status: "Идет регистрация",
+		status: "Посадка",
 		city: "Нягань (Камрань)",
 		time: "15:10",
 		aviacompany: "Azur Air",
@@ -43,7 +43,7 @@ var flights = [
 	// Прилетающие
 	{
 		flight: "ЮТ 172",
-		status: "Ожидается в 13:19",
+		status: "Закончена выдача багажа",
 		city: "Ульяновск (Баратаевка)",
 		time: "13:20",
 		aviacompany: "Ютейр",
@@ -51,7 +51,7 @@ var flights = [
 	},	
 	{
 		flight: "ZF 7730",
-		status: "Ожидается в 13:59",
+		status: "Выдача багажа",
 		city: "Гоа (Даболим)",
 		time: "13:25",
 		aviacompany: "Azur Air",
@@ -107,30 +107,3 @@ var flights = [
 		terminal: "А",
 	}
 ];
-function showData() {
-	for (var i = 0; i < flights.length; i++) {
-		var item = '<div class="scheduleItem">' +
-						'<div class="scheduleItem__time scheduleExplanation__tablecell_time">' + 
-							flights[i].time +
-						'</div>' +
-						'<div class="scheduleItem__city scheduleExplanation__tablecell_city">' +
-							flights[i].city +
-						'</div>' +
-						'<div class="scheduleItem__aviacompany scheduleExplanation__tablecell_aviacompany">' +
-							flights[i].aviacompany +
-						'</div>' +
-						'<div class="scheduleItem__flight scheduleExplanation__tablecell_flight">' +
-							flights[i].flight +
-						'</div>' +	
-						'<div class="scheduleItem__terminal scheduleExplanation__tablecell_terminal">' +
-							flights[i].terminal +
-						'</div>' +
-						'<div class="scheduleItem__flightStatus scheduleExplanation__tablecell_flightStatus">' +
-							flights[i].status +
-						'</div>'
-				   '</div>';
-		$('.schedule').append(item);
-	};
-}
-showData();	
-

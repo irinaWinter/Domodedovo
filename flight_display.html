@@ -10,7 +10,9 @@
 	<script src="script/jquery-3.3.1.min.js"></script>
 	<script src="script/script.js"></script>
 	<script src="script/search.js"></script>
-	<script src="script/data.js" defer></script>
+	<script src="script/data.js"></script>
+	<script src="script/show_data.js" defer></script>
+	<script src="script/sorting.js" defer></script>
 </head>
 <body class="flightDisplay">
 	<!-- Раскрывающееся меню (start) -->
@@ -64,18 +66,18 @@
 		</div>	
 	</div>
 	<!-- Раскрывающееся меню (end) -->
-	<div class="page">
+	<div class="page_indents_top-bottom">
 		<div class="container">
 			<header class="header">
 				<a href="index.html"><img src="img/logo/color-logo.png" alt="Логотип аэропорта Домодедово"></a>
 				<nav class="header__navigation">
-					<ul class="header"> <!-- ПРОПИСАТЬ СТИЛИ ДЛЯ UL !!!!! -->
-						<li class="header__list"><a class="header__link header__link_theme_black" href="index.html">Главная</a></li>
-						<li class="header__list"><a class="header__link header__link_active" href="flight_display.html">Табло рейсов</a></li>
-						<li class="header__list"><a class="header__link header__link_theme_black" href="#">Услуги</a></li>
-						<li class="header__list"><a class="header__link header__link_theme_black" href="#">Гид по аэропорту</a></li>
-						<li class="header__list"><a class="header__link header__link_theme_black" href="#">Парковка</a></li>
-						<li class="header__list"><a class="header__link header__link_theme_black" href="#">Как добраться</a></li>
+					<ul class="header__list"> <!-- ПРОПИСАТЬ СТИЛИ ДЛЯ UL !!!!! -->
+						<li class="header__listItem"><a class="header__link header__link_theme_black" href="index.html">Главная</a></li>
+						<li class="header__listItem"><a class="header__link header__link_active" href="flight_display.html">Табло рейсов</a></li>
+						<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Услуги</a></li>
+						<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Гид по аэропорту</a></li>
+						<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Парковка</a></li>
+						<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Как добраться</a></li>
 						<li class="Hamburger">
 							<span class="Hamburger__line Hamburger__line_theme_black"></span>
 							<span class="Hamburger__line Hamburger__line_theme_black"></span>
