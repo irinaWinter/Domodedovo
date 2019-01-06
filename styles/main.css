@@ -1,16 +1,18 @@
+
 html {
 	height: 100%;
 
 }
-.flightDisplay {
-
+.hideScroll {
+	overflow: hidden;
 }
+
 .index {
 	height: 100%;
 	margin: 0;
 }
 .dropDownMenu {
-	position: absolute;
+	position: fixed;
 	z-index: 1;
 	width: 100%;
 	height: 100%;
@@ -66,7 +68,7 @@ html {
 }
 .flightDisplay {
 	height: 100%;
-	margin: 0;
+	margin: 0 auto;
 }
 .container {
 	max-width: 1350px;
