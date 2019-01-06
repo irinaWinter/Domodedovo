@@ -4,6 +4,9 @@ function showData() {
 						'<div class="scheduleItem__time scheduleExplanation__tablecell_time">' + 
 							flights[i].time +
 						'</div>' +
+						'<div class="scheduleItem__expectedTime scheduleExplanation__tablecell_expectedTime">' + 
+							flights[i].expectedTime +
+						'</div>' +
 						'<div class="scheduleItem__city scheduleExplanation__tablecell_city">' +
 							flights[i].city +
 						'</div>' +

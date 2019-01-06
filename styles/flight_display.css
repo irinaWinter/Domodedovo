@@ -36,6 +36,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	background-color: #fff;
 }
 .flightFilter__select_theme_greyArrow {
 	background: url('../img/arrow.png') no-repeat right;
@@ -73,25 +76,31 @@
 
 .scheduleExplanation {
 	display: flex;
+	position: sticky;
+	top: 61px;
 	width: 100;
 	margin-top: 60px;
-	padding: 0 10px;
+	padding: 20px 10px;
+	background-color: #fff;
 	border-bottom: 1px solid #747474;
 }
 .scheduleExplanation__tablecell_time {
 	width: 10%;
 }
+.scheduleExplanation__tablecell_expectedTime {
+	width: 10%;
+}
 .scheduleExplanation__tablecell_city {
-	width: 30%;
+	width: 35%;
 }
 .scheduleExplanation__tablecell_aviacompany {
-	width: 25%;
+	width: 15%;
 }
 .scheduleExplanation__tablecell_flight {
 	width: 10%;
 }
 .scheduleExplanation__tablecell_terminal {
-	width: 10%;
+	width: 5%;
 }
 .scheduleExplanation__tablecell_flightStatus {
 	width: 15%;
@@ -109,7 +118,17 @@
 	padding: 25px 10px;
 	border-bottom: 1px solid #747474;
 }
+.scheduleItem:hover {
+	background-color: #f3f3f3;
+	cursor: pointer;
+}
 .scheduleItem__time {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #000;
+}
+.scheduleItem__expectedTime {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 20px;

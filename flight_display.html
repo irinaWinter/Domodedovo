@@ -13,6 +13,7 @@
 	<script src="script/data.js"></script>
 	<script src="script/show_data.js" defer></script>
 	<script src="script/sorting.js" defer></script>
+
 </head>
 <body class="flightDisplay">
 	<!-- Раскрывающееся меню (start) -->
@@ -102,12 +103,21 @@
 				</div>	
 				<div class="schedule">
 					<div class="scheduleExplanation">
-						<p class="scheduleExplanation__item scheduleExplanation__tablecell_time">Время</p>
-						<p class="scheduleExplanation__item scheduleExplanation__tablecell_city">Город назначения</p>
-						<p class="scheduleExplanation__item scheduleExplanation__tablecell_aviacompany">Авиакомпания</p>
-						<p class="scheduleExplanation__item scheduleExplanation__tablecell_flight">Рейс</p>
-						<p class="scheduleExplanation__item scheduleExplanation__tablecell_terminal">Терминал</p>
-						<p class="scheduleExplanation__item scheduleExplanation__tablecell_flightStatus">Статус рейса</p>
+						<div class="scheduleExplanation__item scheduleExplanation__tablecell_time">
+							Расписание
+							<div class="clock">
+								<span class="clock__hour">hh</span>
+								<span class="clock__colon">:</span>
+								<span class="clock__min">mm</span>
+							</div>
+						</div>
+						
+						<div class="scheduleExplanation__item scheduleExplanation__tablecell_expectedTime">Ожидаемое время</div>
+						<div class="scheduleExplanation__item scheduleExplanation__tablecell_city">Город назначения</div>
+						<div class="scheduleExplanation__item scheduleExplanation__tablecell_aviacompany">Авиакомпания</div>
+						<div class="scheduleExplanation__item scheduleExplanation__tablecell_flight">Рейс</div>
+						<div class="scheduleExplanation__item scheduleExplanation__tablecell_terminal">Терминал</div>
+						<div class="scheduleExplanation__item scheduleExplanation__tablecell_flightStatus">Статус рейса</div>
 					</div>
 				</div>
 			</main>
@@ -120,5 +130,6 @@
 			</footer>
 		</div>
 	</div>
+	<script src="script/current_time.js"></script>
 </body>			
 </html>
