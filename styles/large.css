@@ -1,0 +1,35 @@
+@media screen and (min-width: 320px) {
+	.page_indents_top-bottom {
+		padding: 20px 0;
+	}
+	.header {
+		align-items: center;
+	}
+	.header__logo {
+		width: 150px;
+	}
+	.header__listItem {
+		display: none;
+	}
+	.flightFilter {
+		margin-top: 70px;
+		flex-wrap: wrap;
+	}
+}
+@media screen and (min-width: 576px) {
+	.flightDisplayContent {
+		background-color: green;
+	}
+}
+@media screen and (min-width: 768px) {
+	.flightDisplayContent {
+		background-color: gray;
+	}
+}
+@media screen and (min-width: 992px) {
+	.flightDisplayContent {
+		background-color: red;
+	}
+}
+
+

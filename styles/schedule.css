@@ -1,0 +1,250 @@
+.content {
+	width: 100%;
+}
+.content__headline {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 130px;
+	color: #fff;	
+}
+.schedule {
+	width: 100%;
+}
+.scheduleExplanation {
+	display: flex;
+	position: sticky;
+	width: 100;
+	padding: 20px 10px;
+	background-color: #fff;
+	border-bottom: 1px solid #747474;
+}
+
+.scheduleExplanation__item {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #cccbca;
+}
+.scheduleItem {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #747474;
+}
+.scheduleItem:hover {
+	background-color: #f3f3f3;
+	cursor: pointer;
+}
+.scheduleItem__time {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #000;
+}
+.scheduleItem__expectedTime {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #000;
+}
+.scheduleItem__city {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: #000;
+}
+.scheduleItem__aviacompany {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #000;
+}
+.scheduleItem__flight {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #000;
+}
+.scheduleItem__terminal {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #000;
+}
+.scheduleItem__flightStatus {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #000;
+	text-align: right;
+}
+
+@media screen and (min-width: 320px) {
+	.scheduleExplanation__item {
+		display: none;
+	}
+	.schedule {
+		margin-top:20px;
+		justify-content: space-between;
+	}
+	.scheduleExplanation__tablecell_time {
+		margin-right: 10px;
+	}
+	.scheduleExplanation__tablecell_expectedTime {
+		display: none;
+	}
+	.scheduleExplanation__tablecell_city {
+		margin-right: 10px;
+	}
+	.scheduleExplanation__tablecell_aviacompany {
+		margin-right: 10px;
+	}
+	.scheduleExplanation__tablecell_flight {
+		margin-right: 10px;
+
+	}
+	.scheduleExplanation__tablecell_terminal {
+		margin-right: 10px;
+	}
+	.scheduleExplanation__tablecell_flightStatus {
+		margin-right: 10px;
+	}
+	.scheduleItem {
+		padding: 15px 10px;
+		flex-wrap: wrap;
+	}
+	.scheduleItem__time {
+		font-size: 14px;
+	}
+	.scheduleItem__expectedTime {
+		font-size: 14px;
+	}
+	.scheduleItem__city {
+		font-size: 14px;
+	}
+	.scheduleItem__aviacompany {
+		font-size: 14px;
+	}
+	.scheduleItem__flight {
+		font-size: 14px;
+	}
+	.scheduleItem__terminal {
+		font-size: 14px;
+		font-weight: 700;
+		text-align: center;
+	}	
+	.scheduleItem__flightStatus {
+		font-size: 14px;
+	}
+
+}
+@media screen and (min-width: 576px) {
+	.scheduleItem {
+		padding: 15px 10px;
+	}
+	.scheduleItem__time {
+		font-size: 14px;
+	}
+	.scheduleItem__expectedTime {
+		font-size: 14px;
+	}
+	.scheduleItem__city {
+		font-size: 14px;
+	}
+	.scheduleItem__aviacompany {
+		font-size: 14px;
+	}
+	.scheduleItem__flight {
+		font-size: 14px;
+	}
+	.scheduleItem__terminal {
+		font-size: 14px;
+		font-weight: 700;
+		text-align: center;
+	}	
+	.scheduleItem__flightStatus {
+		font-size: 14px;
+	}
+}
+@media screen and (min-width: 768px) {
+	
+	.scheduleItem {
+		padding: 20px 10px;
+	}
+	.scheduleItem__time {
+		font-size: 16px;
+	}
+	.scheduleItem__expectedTime {
+		font-size: 16px;
+	}
+	.scheduleItem__city {
+		font-size: 18px;
+	}
+	.scheduleItem__aviacompany {
+		font-size: 16px;
+	}
+	.scheduleItem__flight {
+		font-size: 16px;
+	}
+	.scheduleItem__terminal {
+		font-size: 16px;
+		font-weight: 700;
+		text-align: center;
+	}	
+	.scheduleItem__flightStatus {
+		font-size: 14px;
+	}
+
+}
+@media screen and (min-width: 992px) {
+	.schedule {
+		margin-top:30px;
+	}
+	.scheduleExplanation__item {
+		font-size: 15px;
+		display: block;
+	}
+	.scheduleExplanation__tablecell_time {
+		width: 13%;
+	}
+	.scheduleExplanation__tablecell_expectedTime {
+		width: 13%;
+		display: block;
+	}
+	.scheduleExplanation__tablecell_city {
+		width: 29%;
+	}
+	.scheduleExplanation__tablecell_terminal:first-child {
+		display: block;
+	}
+	.scheduleItem {
+		padding: 20px 10px;
+	}
+	.scheduleItem__time {
+		font-size: 20px;
+	}
+	.scheduleItem__expectedTime {
+		font-size: 20px;
+	}
+	.scheduleItem__city {
+		font-size: 25px;
+	}
+	.scheduleItem__aviacompany {
+		font-size: 20px;
+	}
+	.scheduleItem__flight {
+		font-size: 20px;
+	}
+	.scheduleItem__terminal {
+		font-size: 20px;
+	}	
+	.scheduleItem__flightStatus {
+		font-size: 15px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.schedule {
+		margin-top: 60px;
+	}
+	.scheduleItem {
+		padding: 30px 10px;
+	}
+	.scheduleItem__city {
+		font-size: 30px;
+	}
+}
+
