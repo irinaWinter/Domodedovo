@@ -1,5 +1,6 @@
 .footer {
 	width: 100%;
+	margin-top: 50px;
 	align-self: flex-end;
 }
 .footer__phoneNumber {
