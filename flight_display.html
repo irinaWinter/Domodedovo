@@ -69,68 +69,65 @@
 		</div>	
 	</div>
 	<!-- Раскрывающееся меню (end) -->
-	<div class="page_indents_top-bottom">
-		<div class="container">
-			<header class="header">
-				<a href="#"><img src="img/logo/color-logo.png" alt="Логотип аэропорта Домодедово"></a>
-				<nav class="header__navigation">
-					<ul class="header__list"> <!-- ПРОПИСАТЬ СТИЛИ ДЛЯ UL !!!!! -->
-						<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Главная</a></li>
-						<li class="header__listItem"><a class="header__link header__link_active" href="flight_display.html">Табло рейсов</a></li>
-						<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Услуги</a></li>
-						<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Гид по аэропорту</a></li>
-						<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Парковка</a></li>
-						<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Как добраться</a></li>
-						<li class="Hamburger">
-							<span class="Hamburger__line Hamburger__line_theme_black"></span>
-							<span class="Hamburger__line Hamburger__line_theme_black"></span>
-							<span class="Hamburger__line Hamburger__line_theme_black"></span>
-						</li>
-					</ul>	
-				</nav>
-			</header>
-			<main class="flightDisplayContent">
-				<div class="flightFilter">
-					<div class="flightFilter__select_theme_greyArrow">
-						<select class="flightFilter__select">
-							<option class="flightFilter__option">Вылет</option>
-							<option class="flightFilter__option">Прилет</option>
-							<option class="flightFilter__option">Задержан</option>
-						</select>
-					</div>	
-					<div class="search">
-						<input class="search__input" type="search" name="search" placeholder="Поиск по номеру рейса">
-						<button class="search__button"></button>
-					</div>
+	<div class="container">
+		<header class="header">
+			<a href="#"><img src="img/logo/color-logo.png" alt="Логотип аэропорта Домодедово"></a>
+			<nav class="header__navigation">
+				<ul class="header__list"> <!-- ПРОПИСАТЬ СТИЛИ ДЛЯ UL !!!!! -->
+					<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Главная</a></li>
+					<li class="header__listItem"><a class="header__link header__link_active" href="flight_display.html">Табло рейсов</a></li>
+					<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Услуги</a></li>
+					<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Гид по аэропорту</a></li>
+					<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Парковка</a></li>
+					<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Как добраться</a></li>
+					<li class="Hamburger">
+						<span class="Hamburger__line Hamburger__line_theme_black"></span>
+						<span class="Hamburger__line Hamburger__line_theme_black"></span>
+						<span class="Hamburger__line Hamburger__line_theme_black"></span>
+					</li>
+				</ul>	
+			</nav>
+		</header>
+		<main>
+			<div class="flightFilter">
+				<div class="flightFilter__select_theme_greyArrow">
+					<select class="flightFilter__select">
+						<option class="flightFilter__option">Вылет</option>
+						<option class="flightFilter__option">Прилет</option>
+						<option class="flightFilter__option">Задержан</option>
+					</select>
 				</div>	
-				<div class="schedule">
-					<div class="scheduleExplanation">
-						<div class="scheduleExplanation__item scheduleExplanation__tablecell_time">
-							Расписание
-							<div class="clock">
-								<span class="clock__hour">hh</span>
-								<span class="clock__colon">:</span>
-								<span class="clock__min">mm</span>
-							</div>
-						</div>
-						
-						<div class="scheduleExplanation__item scheduleExplanation__tablecell_expectedTime">Ожидаемое время</div>
-						<div class="scheduleExplanation__item scheduleExplanation__tablecell_city">Город назначения</div>
-						<div class="scheduleExplanation__item scheduleExplanation__tablecell_aviacompany">Авиакомпания</div>
-						<div class="scheduleExplanation__item scheduleExplanation__tablecell_flight">Рейс</div>
-						<div class="scheduleExplanation__item scheduleExplanation__tablecell_terminal">Терминал</div>
-						<div class="scheduleExplanation__item scheduleExplanation__tablecell_flightStatus">Статус рейса</div>
-					</div>
+				<div class="search">
+					<input class="search__input" type="search" name="search" placeholder="Поиск по номеру рейса">
+					<button class="search__button"></button>
 				</div>
-			</main>
-			<footer class="footer">
-					<span class="footer__phoneNumber footer__contactsItem">+7 495 933-66-66</span>
-					<a class="footer__contactsItem" href="https://www.facebook.com/dme.aero" target="_blank"><img src="img/social-networks/fb.png" alt="Логотип Facebook"></a>
-					<a class="footer__contactsItem" href="https://vk.com/dme.aero" target="_blank"><img src="img/social-networks/vk.png" alt="Логотип VK"></a>
-					<a class="footer__contactsItem" href="https://www.instagram.com/dme.aero/" target="_blank"><img src="img/social-networks/inst.png" alt="Логотип Instagram"></a>
-					<a class="footer__contactsItem" href="https://www.youtube.com/channel/UCbXBdxjnrfbCAmIC_7Icdog" target="_blank"><img src="img/social-networks/youTube.png" alt="Логотип YouTube"></a>	
-			</footer>
-		</div>
+			</div>	
+			<div class="schedule">
+				<div class="scheduleExplanation">
+					<div class="scheduleExplanation__item scheduleExplanation__tablecell_time">
+							Расписание
+						<div class="clock">
+							<span class="clock__hour">hh</span>
+							<span class="clock__colon">:</span>
+							<span class="clock__min">mm</span>
+						</div>
+					</div>		
+					<div class="scheduleExplanation__item scheduleExplanation__tablecell_expectedTime">Ожидаемое время</div>
+					<div class="scheduleExplanation__item scheduleExplanation__tablecell_city">Город назначения</div>
+					<div class="scheduleExplanation__item scheduleExplanation__tablecell_aviacompany">Авиакомпания</div>
+					<div class="scheduleExplanation__item scheduleExplanation__tablecell_flight">Рейс</div>
+					<div class="scheduleExplanation__item scheduleExplanation__tablecell_terminal">Терминал</div>
+					<div class="scheduleExplanation__item scheduleExplanation__tablecell_flightStatus">Статус рейса</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+				<span class="footer__phoneNumber footer__contactsItem">+7 495 933-66-66</span>
+				<a class="footer__contactsItem" href="https://www.facebook.com/dme.aero" target="_blank"><img src="img/social-networks/fb.png" alt="Логотип Facebook"></a>
+				<a class="footer__contactsItem" href="https://vk.com/dme.aero" target="_blank"><img src="img/social-networks/vk.png" alt="Логотип VK"></a>
+				<a class="footer__contactsItem" href="https://www.instagram.com/dme.aero/" target="_blank"><img src="img/social-networks/inst.png" alt="Логотип Instagram"></a>
+				<a class="footer__contactsItem" href="https://www.youtube.com/channel/UCbXBdxjnrfbCAmIC_7Icdog" target="_blank"><img src="img/social-networks/youTube.png" alt="Логотип YouTube"></a>	
+		</footer>
 	</div>
 </body>			
 </html>

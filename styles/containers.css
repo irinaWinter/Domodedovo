@@ -1,0 +1,14 @@
+.flightDisplay {
+	margin: 0 auto;
+}
+.container {
+	max-width: 1350px;
+	min-width: 576px;
+	padding: 40px 20px 20px;
+	box-sizing: border-box;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}

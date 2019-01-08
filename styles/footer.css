@@ -1,0 +1,16 @@
+.footer {
+	width: 100%;
+	align-self: flex-end;
+}
+.footer__phoneNumber {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;	
+	font-size: 15px;
+	color: #bababb;
+}
+.footer__contactsItem {
+	margin-right: 15px;
+}
+.footer__phoneNumbe_theme_black {
+	color: #000;
+}
