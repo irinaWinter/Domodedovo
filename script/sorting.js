@@ -26,9 +26,11 @@ $(function(){
 			$.each($('.scheduleItem__flightStatus'), function() {
 				if($(this).text() === 'Задерживается') {
 					$(this).closest('.scheduleItem').show();
+
 				} else {
 					$(this).closest('.scheduleItem').hide();
 				}
+
 			});
 		}
 	}
