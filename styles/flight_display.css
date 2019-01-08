@@ -6,7 +6,3 @@
 @import "flight_filter.css";
 @import "schedule.css";
 @import "footer.css";
-.flightDisplayContent {
-	width: 100%;
-	margin-bottom: 50px;
-}

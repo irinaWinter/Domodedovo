@@ -30,7 +30,6 @@ $(function(){
 				} else {
 					$(this).closest('.scheduleItem').hide();
 				}
-
 			});
 		}
 	}

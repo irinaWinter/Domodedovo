@@ -19,8 +19,7 @@
 
 </head>
 <body class="flightDisplay">
-	<!-- Раскрывающееся меню (start) -->
-
+	<!-- Раскрывающееся меню (START) -->
 	<div class="dropDownMenu">
 		<div class="container">
 			<div class="header">
@@ -71,10 +70,11 @@
 	</div>
 	<!-- Раскрывающееся меню (end) -->
 	<div class="container">
+		<!-- header (START) -->
 		<header class="header">
 			<a href="#"><img src="img/logo/color-logo.png" alt="Логотип аэропорта Домодедово"></a>
 			<nav class="header__navigation">
-				<ul class="header__list"> <!-- ПРОПИСАТЬ СТИЛИ ДЛЯ UL !!!!! -->
+				<ul class="header__list">
 					<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Главная</a></li>
 					<li class="header__listItem"><a class="header__link header__link_active" href="flight_display.html">Табло рейсов</a></li>
 					<li class="header__listItem"><a class="header__link header__link_theme_black" href="#">Услуги</a></li>
@@ -89,7 +89,9 @@
 				</ul>	
 			</nav>
 		</header>
+		<!-- header (end) -->
 		<main class="content">
+			<!-- Фильтр рейсов (START) -->
 			<div class="flightFilter">
 				<div class="flightFilter__select_theme_greyArrow">
 					<select class="flightFilter__select">
@@ -102,7 +104,9 @@
 					<input class="search__input" type="search" name="search" placeholder="Поиск по номеру рейса">
 					<button class="search__button"></button>
 				</div>
-			</div>	
+			</div>
+			<!-- Фильтр рейсов (end) -->	
+			<!-- Расписание рейсов (START) -->
 			<div class="schedule">
 				<div class="scheduleExplanation">
 					<div class="scheduleExplanation__item scheduleExplanation__tablecell_time">
@@ -121,7 +125,9 @@
 					<div class="scheduleExplanation__item scheduleExplanation__tablecell_flightStatus">Статус рейса</div>
 				</div>
 			</div>
+			<!-- Расписание рейсов (end) -->
 		</main>
+		<!-- footer (START) -->
 		<footer class="footer">
 				<span class="footer__phoneNumber footer__contactsItem">+7 495 933-66-66</span>
 				<a class="footer__contactsItem" href="https://www.facebook.com/dme.aero" target="_blank"><img src="img/social-networks/fb.png" alt="Логотип Facebook"></a>
@@ -129,6 +135,7 @@
 				<a class="footer__contactsItem" href="https://www.instagram.com/dme.aero/" target="_blank"><img src="img/social-networks/inst.png" alt="Логотип Instagram"></a>
 				<a class="footer__contactsItem" href="https://www.youtube.com/channel/UCbXBdxjnrfbCAmIC_7Icdog" target="_blank"><img src="img/social-networks/youTube.png" alt="Логотип YouTube"></a>	
 		</footer>
+		<!-- footer (end) -->
 	</div>
 </body>			
 </html>
