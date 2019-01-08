@@ -1,12 +1,14 @@
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 576px) {*/
 	.flightFilter {
 		margin-top: 80px;	
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
 		position: sticky;
 		top: 0;
 		background-color: #fff;
+		z-index: 1;
 	}
 	.flightFilter__select_theme_greyArrow {
 		background: url('../img/arrow.png') no-repeat right;
@@ -30,6 +32,9 @@
 		font-weight: 500;
 		font-size: 25px;
 	}
+/*}*/
+@media screen and (min-width: 768px) {
+
 }
 @media screen and (min-width: 992px) {
 	.flightFilter {

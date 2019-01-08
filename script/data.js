@@ -24,7 +24,7 @@ var flights = [
 		city: "Ульяновск (Баратаевка)",
 		time: "15:05",
 		expectedTime: "15:30",
-		aviacompany: "Опаздывает",
+		aviacompany: "Победа",
 		terminal: "А",
 	},
 	{

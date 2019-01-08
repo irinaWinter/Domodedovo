@@ -1,10 +1,11 @@
-@media screen and (min-width: 768px) {
+
+/*@media screen and (min-width: 576px) {*/
 	.hideScroll {
 		overflow: hidden;
 	}
 	.dropDownMenu {
 		position: fixed;
-		z-index: 1;
+		z-index: 2;
 		width: 100%;
 		height: 100%;
 		box-sizing: border-box;
@@ -47,6 +48,9 @@
 	.menu__socialNetwork {
 		margin-right: 15px;
 	}
+/*}*/
+@media screen and (min-width: 768px) {
+
 }	
 @media screen and (min-width: 992px) {
 	.menu__item {
