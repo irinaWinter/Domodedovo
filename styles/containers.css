@@ -1,16 +1,23 @@
-.flightDisplay {
-	margin: 0 auto;
+@media screen and (min-width: 768px) {
+	.flightDisplay {
+		margin: 0 auto;
+	}
+	.container {
+		min-height: 100vh;
+		max-width: 1350px;
+		min-width: 576px;
+		padding: 30px 20px 20px;
+		box-sizing: border-box;
+		margin:  auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.content {
+		width: 100%;
+	}
 }
-.container {
-	min-height: 100vh;
-	max-width: 1350px;
-	min-width: 576px;
-	padding: 40px 20px 20px;
-	box-sizing: border-box;
-	margin:  auto;
-	display: flex;
-	flex-wrap: wrap;
-}
-.content {
-	width: 100%;
-}
+@media screen and (min-width: 992px) {
+	.container {
+		padding: 40px 20px 20px;
+	}
+}	

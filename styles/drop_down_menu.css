@@ -1,4 +1,4 @@
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
 	.hideScroll {
 		overflow: hidden;
 	}
@@ -10,15 +10,21 @@
 		box-sizing: border-box;
 		background-color: #fff;
 		display: none;
+		overflow: auto;
 	}
 	.menu {
 		width: 100%;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-around;
-		margin: 50px 0 150px 0;
+		margin: 50px 0;
+
 	}
 	.menu__item {
 		list-style-type: none;
+		margin: 20px 0 0 0;
+		padding: 0;
+		width: 35%;
 	}
 	.menu__link {
 		text-decoration: none;
@@ -31,7 +37,7 @@
 		color: #059097;
 	}
 	.menu__listItem {
-			margin-bottom: 20px;
+		margin-bottom: 15px;
 	}
 	.menu__link_headline {
 		color: #000;
@@ -40,6 +46,15 @@
 	}
 	.menu__socialNetwork {
 		margin-right: 15px;
+	}
+}	
+@media screen and (min-width: 992px) {
+	.menu__item {
+		width: auto;
+		margin-top: 0;
+	}
+	.menu__listItem {
+		margin-bottom: 20px;
 	}
 }
 @media screen and (min-width: 1200px) {
