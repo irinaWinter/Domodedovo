@@ -1,31 +1,38 @@
-.flightFilter {
-	margin-top: 130px;	
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	position: sticky;
-	top: 0;
-	background-color: #fff;
+@media screen and (min-width: 992px) {
+	.flightFilter {
+		margin-top: 100px;	
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: sticky;
+		top: 0;
+		background-color: #fff;
+	}
+	.flightFilter__select_theme_greyArrow {
+		background: url('../img/arrow.png') no-repeat right;
+		background-position: 100% 65%;
+		overflow: hidden;
+		line-height: 1;
+		width: 280px;
+	}
+	.flightFilter__select {
+		background: transparent;
+		width: 300px;
+		border: none;
+		outline: none;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: 50px;
+		color: #059097;
+	}
+	.flightFilter__option {
+		color: #000;
+		font-weight: 500;
+		font-size: 25px;
+	}
 }
-.flightFilter__select_theme_greyArrow {
-	background: url('../img/arrow.png') no-repeat right;
-	background-position: 100% 65%;
-	overflow: hidden;
-	line-height: 1;
-	width: 280px;
-}
-.flightFilter__select {
-	background: transparent;
-	width: 300px;
-	border: none;
-	outline: none;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	font-size: 50px;
-	color: #059097;
-}
-.flightFilter__option {
-	color: #000;
-	font-weight: 500;
-	font-size: 25px;
+@media screen and (min-width: 1200px) {
+	.flightFilter {
+		margin-top: 130px;	
+	}
 }
